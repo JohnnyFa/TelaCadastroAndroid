@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iphone"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Bem-vindo"
+        android:textSize="15sp"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/button_list"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="170dp"
+        android:background="@android:color/transparent"
+        android:padding="25dp"
+        android:text="LISTAR USUÁRIOS"
+        android:textColor="#FFFFFF" />
+
+
+    <Button
+        android:id="@+id/button_cadastro"
+        android:layout_width="201dp"
+        android:layout_height="81dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:text="CADASTRAR"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
