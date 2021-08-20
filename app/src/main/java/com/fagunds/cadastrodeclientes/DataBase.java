@@ -12,29 +12,31 @@ public class DataBase extends SQLiteOpenHelper {
     private static final String TAGZ = "DataBaseHelper";
 
     private static final String TABLE_NAME = "DataBaseHelper";
-    private static final String COL1 = "ID";
-    private static final String COL2 = "Name";
+    private static final String ID = "ID";
+    private static final String NAME = "Name";
 
     public DataBase(Context context){
-        super(context, TABLE_NAME, null,1 );
+        super(context, TABLE_NAME, null,2 );
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createTable = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                COL2 + " TEXT";
+        String createTable = ("CREATE TABLE " + TABLE_NAME + " ("
+                + ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                NAME+ " TEXT);");
+
         db.execSQL(createTable);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-        db.execSQL("DROP IF TABLE EXISTS" + TABLE_NAME);
+        db.execSQL("DROP table " + TABLE_NAME);
         onCreate(db);
     }
 
     public boolean addData(String item){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(COL2, item);
+        contentValues.put(NAME, item);
 
         Log.d(TAGZ, "appData: Adding " + item + " to " + TABLE_NAME) ;
 
@@ -48,7 +50,7 @@ public class DataBase extends SQLiteOpenHelper {
     }
     public Cursor getData(){
         SQLiteDatabase db = this.getWritableDatabase();
-        String query = "SELECT * FROM" + TABLE_NAME;
+        String query = "SELECT * FROM " + TABLE_NAME;
         Cursor data = db.rawQuery(query, null);
         return data;
     }
