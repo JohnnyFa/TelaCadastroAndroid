@@ -19,7 +19,7 @@ TelaCadastroAndroid is a simple yet powerful Android application developed in Ja
 
 To get started with TelaCadastroAndroid, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/TelaCadastroAndroid.git`
+1. Clone the repository: `git clone https://github.com/JohnnyFa/TelaCadastroAndroid.git`
 2. Open the project in Android Studio.
 3. Customize the registration screen UI as per your requirements, utilizing XML layouts and FragmentById framework.
 4. Implement the logic to handle user registration and data storage, utilizing SQLite database for efficient data management.
