@@ -24,6 +24,16 @@ To get started with TelaCadastroAndroid, follow these steps:
 3. Customize the registration screen UI as per your requirements, utilizing XML layouts and FragmentById framework.
 4. Implement the logic to handle user registration and data storage, utilizing SQLite database for efficient data management.
 5. Build and run the app on an Android device or emulator.
+
+## Contributing 🤝
+
+Contributions are welcome! If you have any ideas, suggestions, or improvements, feel free to submit a pull request or open an issue.
+
+## License 📜
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
 6. Start registering users and managing the list of registered users!
 
 ## Contributing 🤝
